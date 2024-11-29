@@ -1,0 +1,14 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String a=sc.next();
+        String b=new String("");//ans:uhsir
+        int i=a.length()-1;
+        while(i>=0){
+            b+=a.charAt(i);
+            i--;
+        }
+        System.out.println(b);
+    }
+}
