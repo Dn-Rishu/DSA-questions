@@ -1,0 +1,16 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+     Scanner sc=new Scanner(System.in);
+     int cp=sc.nextInt();
+     int sp=sc.nextInt();
+     if(cp<sp){
+         int profit=sp-cp;
+         System.out.println("profit is "+profit);
+     }
+     else{
+         int loss=cp-sp;
+         System.out.println("loss is "+loss);
+     }
+    }
+}
