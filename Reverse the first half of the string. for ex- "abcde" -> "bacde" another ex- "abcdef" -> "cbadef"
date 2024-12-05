@@ -1,0 +1,19 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();
+        char ch[]=str.toCharArray();
+        int n=ch.length/2;
+        int i=0;
+        while(i<n/2){
+            char temp=ch[i];
+            ch[i]=ch[n-i-1];
+            ch[n-i-1]=temp;
+            i++;
+        }
+        String str1=new String(ch);
+        System.out.println(str1);
+        
+    }
+}
